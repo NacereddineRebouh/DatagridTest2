@@ -20,7 +20,25 @@
   </ItemGroup>
 
   <ItemGroup>
+    <ProjectReference Include="..\DatagridTest2.Converters\DatagridTest2.Converters.csproj" />
     <ProjectReference Include="..\DatagridTest2.EFramework\DatagridTest2.EFramework.csproj" />
+    <ProjectReference Include="..\DatagridTest2.Models\DatagridTest2.Models.csproj" />
+    <ProjectReference Include="..\DatagridTest2.Ressources\DatagridTest2.Ressources.csproj" />
+    <ProjectReference Include="..\DatagridTest2.ViewModels\DatagridTest2.ViewModels.csproj" />
+    <ProjectReference Include="..\DatagridTest2.Views\DatagridTest2.Views.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Update="SideMenu.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+  </ItemGroup>
+
+  <ItemGroup>
+    <Page Update="SideMenu.xaml">
+      <XamlRuntime>$(DefaultXamlRuntime)</XamlRuntime>
+      <SubType>Designer</SubType>
+    </Page>
   </ItemGroup>
 
 </Project>

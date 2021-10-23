@@ -6,4 +6,8 @@
     <UseWPF>true</UseWPF>
   </PropertyGroup>
 
+  <ItemGroup>
+    <PackageReference Include="Syncfusion.UI.WPF.NET" Version="19.3.0.43" />
+  </ItemGroup>
+
 </Project>
