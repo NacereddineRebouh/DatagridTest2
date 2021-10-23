@@ -23,8 +23,8 @@ namespace DatagridTest2.ViewModels
         //    set { _UsersList = value; OnPropertyChanged("UsersList"); }
         //}
 
-        //public HomeViewModel()
-        //{ }
+        public HomeViewModel()
+        { }
         //public HomeViewModel(bool LoopUpdate)
         //{
         //    keepthreading = LoopUpdate;

@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 using DatagridTest2.ViewModels;
 using DatagridTest2.ViewModels.Stores;
 
-namespace DatagridTest.ViewModels
+namespace DatagridTest2.ViewModels
 {
     public class MainViewModel : BaseViewModel
     {

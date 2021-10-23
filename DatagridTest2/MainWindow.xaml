@@ -4,7 +4,6 @@
     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
     xmlns:Usercontrol="clr-namespace:DatagridTest2.Ressources.UserControls;assembly=DatagridTest2.Ressources"
     xmlns:ViewModels="clr-namespace:DatagridTest2.ViewModels;assembly=DatagridTest2.ViewModels"
-    xmlns:Views="clr-namespace:DatagridTest2.Views;assembly=DatagridTest2.Views"
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
     xmlns:local="clr-namespace:Startup"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
@@ -73,15 +72,15 @@
                 Content="{Binding CurrentViewModel}">
                 <ContentControl.Resources>
                     <DataTemplate DataType="{x:Type ViewModels:HomeViewModel}">
-                        <Views:HomeView />
+                        <local:HomeView />
                     </DataTemplate>
                     <DataTemplate DataType="{x:Type ViewModels:UsersViewModel}">
-                        <Views:UsersView />
+                        <local:UsersView />
                     </DataTemplate>
                 </ContentControl.Resources>
             </ContentControl>
             <Usercontrol:ControlBar Grid.ColumnSpan="2" />
-            <local:SideMenu
+            <Usercontrol:SideMenu
                 x:Name="Sidemenu"
                 Grid.RowSpan="2"
                 Grid.ColumnSpan="2" />

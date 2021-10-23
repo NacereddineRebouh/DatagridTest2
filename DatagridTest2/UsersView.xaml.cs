@@ -16,11 +16,11 @@ using System.Windows.Shapes;
 namespace Startup
 {
     /// <summary>
-    /// Interaction logic for SideMenu.xaml
+    /// Interaction logic for UsersView.xaml
     /// </summary>
-    public partial class SideMenu : UserControl
+    public partial class UsersView : UserControl
     {
-        public SideMenu()
+        public UsersView()
         {
             InitializeComponent();
         }

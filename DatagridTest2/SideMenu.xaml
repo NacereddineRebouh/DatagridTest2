@@ -1,5 +1,5 @@
 ﻿<UserControl
-    x:Class="DatagridTest2.Ressources.UserControls.SideMenu"
+    x:Class="Startup.SideMenu"
     xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
     xmlns:Converters="clr-namespace:DatagridTest2.Converters;assembly=DatagridTest2.Converters"

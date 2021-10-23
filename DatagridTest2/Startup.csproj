@@ -7,6 +7,16 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <None Remove="Images\home.png" />
+    <None Remove="Images\home2.png" />
+    <None Remove="Images\moon.jpg" />
+    <None Remove="Images\t1.jpg" />
+    <None Remove="Images\t2.jpg" />
+    <None Remove="Images\t3.jpg" />
+    <None Remove="Images\t5.jpg" />
+  </ItemGroup>
+
+  <ItemGroup>
     <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="5.0.11">
       <PrivateAssets>all</PrivateAssets>
       <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
@@ -17,25 +27,48 @@
       <PrivateAssets>all</PrivateAssets>
       <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
     </PackageReference>
+    <PackageReference Include="Syncfusion.UI.WPF.NET" Version="19.3.0.43" />
   </ItemGroup>
 
   <ItemGroup>
     <ProjectReference Include="..\DatagridTest2.Converters\DatagridTest2.Converters.csproj" />
     <ProjectReference Include="..\DatagridTest2.EFramework\DatagridTest2.EFramework.csproj" />
-    <ProjectReference Include="..\DatagridTest2.Models\DatagridTest2.Models.csproj" />
     <ProjectReference Include="..\DatagridTest2.Ressources\DatagridTest2.Ressources.csproj" />
     <ProjectReference Include="..\DatagridTest2.ViewModels\DatagridTest2.ViewModels.csproj" />
-    <ProjectReference Include="..\DatagridTest2.Views\DatagridTest2.Views.csproj" />
   </ItemGroup>
 
   <ItemGroup>
+    <Resource Include="Images\home.png" />
+    <Resource Include="Images\home2.png" />
+    <Resource Include="Images\moon.jpg" />
+    <Resource Include="Images\t1.jpg" />
+    <Resource Include="Images\t2.jpg" />
+    <Resource Include="Images\t3.jpg" />
+    <Resource Include="Images\t5.jpg" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Compile Update="HomeView.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Update="SideMenu.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Update="UsersView.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
   </ItemGroup>
 
   <ItemGroup>
+    <Page Update="HomeView.xaml">
+      <XamlRuntime>$(DefaultXamlRuntime)</XamlRuntime>
+      <SubType>Designer</SubType>
+    </Page>
     <Page Update="SideMenu.xaml">
+      <XamlRuntime>$(DefaultXamlRuntime)</XamlRuntime>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="UsersView.xaml">
       <XamlRuntime>$(DefaultXamlRuntime)</XamlRuntime>
       <SubType>Designer</SubType>
     </Page>

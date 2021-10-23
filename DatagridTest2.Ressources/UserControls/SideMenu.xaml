@@ -215,6 +215,7 @@
                 Margin="5,8,5,0"
                 HorizontalAlignment="Right"
                 VerticalAlignment="Top"
+                x:FieldModifier="public"
                 Foreground="Black"
                 Style="{StaticResource ToggleButtonStyle}">
                 <ToggleButton.Triggers>
