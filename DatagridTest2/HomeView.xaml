@@ -4,7 +4,7 @@
     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
     xmlns:SfGrid="clr-namespace:Syncfusion.UI.Xaml.Collections;assembly=Syncfusion.SfGrid.WPF"
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
-    xmlns:local="clr-namespace:DatagridTest2.Views"
+    xmlns:local="clr-namespace:Startup"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     d:DesignHeight="450"
     d:DesignWidth="800"
@@ -17,7 +17,7 @@
             </Grid.ColumnDefinitions>
             <StackPanel Orientation="Vertical">
 
-                <ListView
+                <!--<ListView
                     x:Name="RecentlySelledProducts"
                     MaxHeight="250"
                     HorizontalContentAlignment="Left"
@@ -30,8 +30,10 @@
                     SelectionMode="Single">
                     <ListView.Resources>
                         <Style TargetType="ListView">
-                            <!--<EventSetter Event="MouseEnter" Handler="ScrollViewer_MouseEnter" />
+                -->
+                <!--<EventSetter Event="MouseEnter" Handler="ScrollViewer_MouseEnter" />
                                 <EventSetter Event="MouseLeave" Handler="ScrollViewer_MouseLeave" />-->
+                <!--
                         </Style>
                     </ListView.Resources>
                     <ListView.ItemTemplate>
@@ -85,19 +87,22 @@
                             <Setter Property="Template">
                                 <Setter.Value>
                                     <ControlTemplate TargetType="{x:Type ListViewItem}">
-                                        <!--<Border
+                -->
+                <!--<Border
                                                 x:Name="Bd"
                                                 Padding="{TemplateBinding Padding}"
                                                 Background="{TemplateBinding Background}"
                                                 BorderBrush="Transparent"
                                                 BorderThickness="0.9"
                                                 SnapsToDevicePixels="true">-->
+                <!--
                                         <ContentPresenter
                                             HorizontalAlignment="{TemplateBinding HorizontalContentAlignment}"
                                             VerticalAlignment="{TemplateBinding VerticalContentAlignment}"
                                             SnapsToDevicePixels="{TemplateBinding SnapsToDevicePixels}" />
-                                        <!--</Border>-->
-                                        <!--<ControlTemplate.Triggers>
+                -->
+                <!--</Border>-->
+                <!--<ControlTemplate.Triggers>
                                                 <Trigger Property="Control.IsMouseOver" Value="True">
                                                     <Setter TargetName="Bd" Property="Background" Value="{StaticResource Hover_Color}" />
                                                     <Setter TargetName="Bd" Property="ItemsControl.BorderBrush" Value="LightGray" />
@@ -108,14 +113,17 @@
                                                 </Trigger>
 
                                             </ControlTemplate.Triggers>-->
+                <!--
                                     </ControlTemplate>
                                 </Setter.Value>
                             </Setter>
-                            <!--<EventSetter Event="PreviewMouseRightButtonDown" Handler="ListViewItem_PreviewMouseRightButtonDown" />-->
+                -->
+                <!--<EventSetter Event="PreviewMouseRightButtonDown" Handler="ListViewItem_PreviewMouseRightButtonDown" />-->
+                <!--
                         </Style>
                     </ListView.ItemContainerStyle>
 
-                </ListView>
+                </ListView>-->
             </StackPanel>
             <Grid Grid.Column="0">
                 <Grid.RowDefinitions>

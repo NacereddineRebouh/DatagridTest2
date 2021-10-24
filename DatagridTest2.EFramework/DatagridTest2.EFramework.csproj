@@ -29,7 +29,9 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Resource Include="DatagridTest2.db" />
+    <Resource Include="DatagridTest2.db">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Resource>
   </ItemGroup>
 
 </Project>

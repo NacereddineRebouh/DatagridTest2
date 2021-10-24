@@ -266,10 +266,7 @@
                     Tag="{StaticResource home}">
 
                     <RadioButton.ToolTip>
-                        <ToolTip
-                            x:Name="RadioToolTip"
-                            Margin="0,0,0,0"
-                            Placement="Right">
+                        <ToolTip Content="Home" Placement="Right">
 
                             <ToolTip.Style>
                                 <Style TargetType="ToolTip">
@@ -279,7 +276,7 @@
                                     <Setter Property="Placement" Value="Left" />
                                     <Setter Property="Template">
                                         <Setter.Value>
-                                            <ControlTemplate>
+                                            <ControlTemplate TargetType="ToolTip">
                                                 <Border
                                                     x:Name="template"
                                                     Width="80"
@@ -294,7 +291,7 @@
                                                         FontSize="12"
                                                         FontWeight="DemiBold"
                                                         Foreground="DimGray"
-                                                        Text="Home" />
+                                                        Text="{TemplateBinding Content}" />
                                                     <Border.Effect>
                                                         <DropShadowEffect
                                                             BlurRadius="5"
@@ -318,7 +315,50 @@
                     Content="Users"
                     IsChecked="{Binding CurrentViewModel, Mode=OneTime, Converter={StaticResource currentViewConverter}, ConverterParameter=User}"
                     Style="{StaticResource radioButtonStyle}"
-                    Tag="{StaticResource Users}" />
+                    Tag="{StaticResource Users}">
+                    <RadioButton.ToolTip>
+                        <ToolTip Content="Users" Placement="Right">
+
+                            <ToolTip.Style>
+                                <Style TargetType="ToolTip">
+                                    <Setter Property="OverridesDefaultStyle" Value="true" />
+                                    <Setter Property="HasDropShadow" Value="True" />
+                                    <Setter Property="ToolTipService.HorizontalOffset" Value="135" />
+                                    <Setter Property="Placement" Value="Left" />
+                                    <Setter Property="Template">
+                                        <Setter.Value>
+                                            <ControlTemplate TargetType="ToolTip">
+                                                <Border
+                                                    x:Name="template"
+                                                    Width="80"
+                                                    Height="30"
+                                                    Margin="10,0,10,10"
+                                                    Background="LightBlue"
+                                                    CornerRadius="6">
+                                                    <TextBlock
+                                                        HorizontalAlignment="Center"
+                                                        VerticalAlignment="Center"
+                                                        FontFamily="Montserrat"
+                                                        FontSize="12"
+                                                        FontWeight="DemiBold"
+                                                        Foreground="DimGray"
+                                                        Text="{TemplateBinding Content}" />
+                                                    <Border.Effect>
+                                                        <DropShadowEffect
+                                                            BlurRadius="5"
+                                                            Opacity="0.4"
+                                                            ShadowDepth="3" />
+                                                    </Border.Effect>
+                                                </Border>
+                                            </ControlTemplate>
+                                        </Setter.Value>
+                                    </Setter>
+
+                                </Style>
+                            </ToolTip.Style>
+                        </ToolTip>
+                    </RadioButton.ToolTip>
+                </RadioButton>
             </StackPanel>
         </Grid>
 

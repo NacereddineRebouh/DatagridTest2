@@ -11,6 +11,7 @@
     Title="MainWindow"
     d:Height="500"
     d:Width="900"
+    x:FieldModifier="public"
     AllowsTransparency="True"
     Background="Transparent"
     PreviewMouseLeftButtonDown="uc_PreviewMouseLeftButtonDown"

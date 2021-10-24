@@ -10,4 +10,8 @@
     <PackageReference Include="Microsoft.EntityFrameworkCore.Relational" Version="5.0.11" />
   </ItemGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\DatagridTest2.EFramework\DatagridTest2.EFramework.csproj" />
+  </ItemGroup>
+
 </Project>
